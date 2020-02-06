@@ -37,7 +37,7 @@
 
 
 - (void)dealloc{
-f    if (self.cleanupFiles && [self.pageURL checkResourceIsReachableAndReturnError:nil]) {
+    if (self.cleanupFiles && [self.pageURL checkResourceIsReachableAndReturnError:nil]) {
         [[NSFileManager defaultManager]removeItemAtURL:self.pageURL error:nil];
     }
 }
