@@ -1,0 +1,3 @@
+[submodule "Sources/MobiWriter/_MobiWriter"]
+	path = Sources/MobiWriter/_MobiWriter
+	url = https://github.com/shinjukunian/MobiWriter.git
