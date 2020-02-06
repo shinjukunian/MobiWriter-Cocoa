@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonnull) NSURL *pageURL;
 
--(instancetype)initWithHTMLString:(NSString*)HTMLString;
--(instancetype)initWithHTMLatURL:(NSURL*)url;
+-(nullable instancetype)initWithHTMLString:(nonnull NSString*)HTMLString;
+-(instancetype)initWithHTMLatURL:(nonnull NSURL*)htmlURL;
 
 @end
 

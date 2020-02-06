@@ -13,7 +13,7 @@
 
 @interface MobiExporter ()
 
-@property NSMutableArray <MobiPage*> * pages;
+@property NSMutableArray* pages;
 
 @end
 
@@ -39,10 +39,11 @@
     std::string author = std::string([self.author cStringUsingEncoding:NSUTF8StringEncoding]);
 
     MobiBook *mobi_book = new MobiBook(title, author);
+
     for (MobiPage *page in self.pages) {
         mobi_book->addHtmlFile(std::string([page.pageURL fileSystemRepresentation]));
     }
-    
+
     MobiWriter *mobi_writer = new MobiWriter();
     BOOL result=mobi_writer->write(mobi_book, [url fileSystemRepresentation]);
     delete mobi_book;
